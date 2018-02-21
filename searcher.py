@@ -6,7 +6,7 @@ class Searcher:
     def __init__(self, indexPath):
         self.indexPath = indexPath
 
-    def search(self, queryFeatures, limit=10):
+    def search(self, queryFeatures, limit=8):
         results = {}
         with open(self.indexPath) as f:
             reader = csv.reader(f)

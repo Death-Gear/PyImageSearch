@@ -17,7 +17,7 @@ features = cd.describe(query)
 
 searcher = Searcher(args["index"])
 results = searcher.search(features)
-#query = cv2.resize(query, (960, 540))
+query = cv2.resize(query, (960, 540))
 cv2.namedWindow("Query", cv2.WINDOW_NORMAL)
 cv2.imshow("Query", query)
 cv2.waitKey(0)
